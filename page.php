@@ -9,6 +9,7 @@ if ( have_posts() ) :
 else:
     _e( 'Sorry, no pages matched your criteria.', 'textdomain' );
 endif;
-?></main>
-<?php get_sidebar();?>
+?>
+</main>
+    <?php get_sidebar();?>
     <?php get_footer();?>
