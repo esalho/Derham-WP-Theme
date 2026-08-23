@@ -1,0 +1,50 @@
+/**
+ * Theme Name:        Derham
+ * Theme URI:         #
+ * Description:       Just trying to learn.
+ * Version:           1.0.0
+ * Author:            Emma Alhola
+ * Author URI:        #
+ * Tags:              Something something
+ * Tested up to:      7.1
+ * Requires at least: 7.1
+ * Requires PHP:      8.5.1
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+body {
+  background-color: aquamarine;
+}
+header {
+  max-width: 60%;
+  margin: auto;
+}
+.page-title {
+  font-size: 3em;
+}
+nav {
+  max-width: 60%;
+  margin: auto;
+  ul {
+    list-style: none;
+  }
+}
+main {
+  max-width: 60%;
+  margin: auto;
+}
+article {
+  font-family: Arial, Helvetica, sans-serif;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.article-info {
+  font-family: "Courier New", Courier, monospace;
+}
+aside {
+  max-width: 30%;
+  margin: auto;
+}
