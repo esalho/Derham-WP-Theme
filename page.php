@@ -1,4 +1,5 @@
 <?php get_header();?>
+<div class="content-wrap">
 <main>
 <?php
 if ( have_posts() ) :
@@ -12,4 +13,5 @@ endif;
 ?>
 </main>
     <?php get_sidebar();?>
+</div>
     <?php get_footer();?>

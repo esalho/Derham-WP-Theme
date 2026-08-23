@@ -12,13 +12,29 @@
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
-
+:root {
+  --padding-small: 0.5rem;
+  --padding-normal: 1rem;
+  --padding-large: 2rem;
+}
+html {
+  font-size: 16px;
+}
 body {
   background-color: aquamarine;
 }
 header {
   max-width: 60%;
   margin: auto;
+}
+.content-wrap {
+  background-color: brown;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-normal);
+  gap: var(--padding-large);
 }
 .page-title {
   font-size: 3em;
@@ -31,8 +47,7 @@ nav {
   }
 }
 main {
-  max-width: 60%;
-  margin: auto;
+  max-width: 65%;
 }
 article {
   font-family: Arial, Helvetica, sans-serif;
@@ -45,6 +60,18 @@ article {
   font-family: "Courier New", Courier, monospace;
 }
 aside {
-  max-width: 30%;
+  max-width: 35%;
+}
+.main-footer {
+  width: 60%;
   margin: auto;
+  padding: var(--padding-normal);
+}
+/*******************/
+/* ~Media queries~ */
+/*******************/
+@media (max-width: 768px) {
+  .content-wrap {
+    display: block;
+  }
 }

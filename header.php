@@ -11,10 +11,14 @@
 <body>
     <header>
         <?php if (is_front_page() || is_home()) : ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
     <h1><?php bloginfo('name'); ?></h1>
+            </a>
     <h2><?php bloginfo('description'); ?></h2>
     <?php else: ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
         <div class="page-title"><?php bloginfo('name'); ?></div>
+        </a>
     <div class="page-description"><?php bloginfo('description'); ?></div>
     <?php endif;?>
     </header>

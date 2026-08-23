@@ -1,4 +1,5 @@
 <?php get_header();?>
+<div class="content-wrap">
 <main>
 <article>
 <?php
@@ -23,4 +24,5 @@ endif;
 ?></article>
 </main>
     <?php get_sidebar();?>
+</div>
     <?php get_footer();?>

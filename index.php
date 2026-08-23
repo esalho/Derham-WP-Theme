@@ -1,10 +1,11 @@
 <?php get_header();?>
+<div class="content-wrap">
 <main>
     <?php if (have_posts()):
         while (have_posts()):
             the_post(); ?>
 
-            <h3><?php the_title(); ?></h3>
+            <h3><a href="<?php the_permalink()?>"><?php the_title(); ?></a></h3>
 
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>
@@ -30,4 +31,5 @@
     <?php endif; ?>
     </main>
     <?php get_sidebar();?>
+</div>
     <?php get_footer();?>
