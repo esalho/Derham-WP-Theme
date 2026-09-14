@@ -1,6 +1,7 @@
 <?php get_header();?>
 <div class="content-wrap">
 <main>
+    <article>
 <?php
 if ( have_posts() ) :
     while ( have_posts() ) : the_post();
@@ -11,6 +12,7 @@ else:
     _e( 'Sorry, no pages matched your criteria.', 'textdomain' );
 endif;
 ?>
+</article>
 </main>
     <?php get_sidebar();?>
 </div>
